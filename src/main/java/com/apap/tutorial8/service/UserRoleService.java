@@ -6,4 +6,6 @@ public interface UserRoleService {
 
     UserRoleModel addUser(UserRoleModel user);
     public String encrypt(String password);
+    UserRoleModel findUserByUsername(String username);
+    void updatePassword(String passBaru, UserRoleModel user);
 }
