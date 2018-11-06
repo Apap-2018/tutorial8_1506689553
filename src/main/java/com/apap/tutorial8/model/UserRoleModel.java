@@ -19,7 +19,7 @@ public class UserRoleModel implements Serializable {
 
     @NotNull
     @Lob
-    @Column(name = "pasword", nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @NotNull
