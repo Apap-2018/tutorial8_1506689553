@@ -44,13 +44,13 @@ public class UserRoleController {
 
             if(passwordEncoder.matches(passLama,user.getPassword())) {
                 userService.updatePassword(passBaru, user);
-                pesan = "Success! Password berhasil diubah";
+                pesan = "S";
             } else {
-                pesan = "Failed! Password is wrong";
+                pesan = "F";
             }
 
         } else {
-            pesan = "Password didn't match";
+            pesan = "NM";
         }
 
         model.addAttribute("pesan", pesan);
